@@ -7,3 +7,4 @@ Descripcion por titulo de las tareas mas empleadas en el analisis de data con Pa
 con fines colaborativos, sientase libre de realizar MERGE REQUEST y dar su opinion.
 
 ### Se recoemienda tener instalada la ultima version de anaconda
+https://www.anaconda.com/download/
