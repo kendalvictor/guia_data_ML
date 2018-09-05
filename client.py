@@ -11,7 +11,7 @@ def error_print(text):
     print("*"*50)
 
 class Analizer:
-    def __init__(self, ruta='', sep=','):
+    def __init__(self, ruta='', sep=',', encoding='ISO-8859-1'):
         func_read = pd.read_csv if ruta.lower().endswith('.csv') else None
         if not func_read:
             error_print('archivo .csv no detectado')
@@ -19,7 +19,7 @@ class Analizer:
             return
             
         try:
-            self.data = pd.read_csv(ruta, encoding= "ISO-8859-1", sep=sep)
+            self.data = pd.read_csv(ruta, encoding=encoding, sep=sep)
         except:
             error_print('verifique ubicacion de archvio')
             self.data = None
